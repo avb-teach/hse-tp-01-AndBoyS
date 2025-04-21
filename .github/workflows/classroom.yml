@@ -18,7 +18,7 @@ jobs:
       with:
         version: "0.6.0"
     - name: Install dependendies
-      run: pip install .
+      run: pip install .; echo $(python --version)
     - name: Download tests script
       env:
         tests_url: ${{ secrets.TESTS_URL }}
